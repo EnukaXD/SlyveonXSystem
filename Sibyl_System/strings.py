@@ -1,6 +1,6 @@
 on_string = """
 ══════✭✭✭✭✭═══════
-CONNECTED TO ORAIZON SYSTEM 
+CONNECTED TO SLYVEON SYSTEM 
 ══════✭✭✭✭✭═══════
      「❂ USER INFO ❂」
 

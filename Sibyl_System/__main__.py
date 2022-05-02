@@ -41,9 +41,9 @@ for load in to_load:
         print("------------------------------------")
 
 
-@System.on(system_cmd(pattern=r"osinfo", allow_enforcer=True))
+@System.on(system_cmd(pattern=r"Slyveon", allow_enforcer=True))
 async def status(event):
-    msg = await event.client.send_file(event.chat_id, file="https://telegra.ph/file/325d571e977aff9ae5f4d.mp4", caption="Connecting to Oraizon Systems", reply_to=event)
+    msg = await event.client.send_file(event.chat_id, file="https://telegra.ph/file/435e49794fdc9f5741caa.mp4", caption="Connecting to Slyveon Systems", reply_to=event)
     time.sleep(1)
     await msg.edit("Initialising ■□□□□□")
     time.sleep(1)
@@ -57,7 +57,7 @@ async def status(event):
     time.sleep(1)
     await msg.edit("Initialising ■■■■■■")
     time.sleep(1)
-    await msg.edit("🔰🔰VERIFIED🔰🔰")
+    await msg.edit("🌼🌼VERIFIED🌼🌼")
     time.sleep(2)
     sender = await event.get_sender()
     user_status = "Inspector" if sender.id in INSPECTORS else "Enforcer"
@@ -65,7 +65,7 @@ async def status(event):
     await msg.edit(on_string.format(Enforcer=user_status, name=sender.first_name))
 
 
-@System.on(system_cmd(pattern="oraizon stats"))
+@System.on(system_cmd(pattern="Slyveon stats"))
 async def stats(event):
     msg = f"Processed {System.processed} messages since last restart."
     msg += f"\n{len(ENFORCERS)} Enforcers & {len(INSPECTORS)} Inspectors"

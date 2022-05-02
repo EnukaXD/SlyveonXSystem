@@ -132,7 +132,7 @@ async def scan(event, flags):
         if event.chat.username
         else f"t.me/c/{event.chat.id}/{event.message.id}"
     )
-    await event.reply("Connecting to Oraizon for a cymatic scan.")
+    await event.reply("Connecting to Slyveon for a cymatic scan.")
     if req_proof and req_user:
         await replied.forward_to(Sibyl_logs)
         await System.gban(
@@ -175,10 +175,10 @@ async def revive(event):
     ):
         await a.edit("User is not gbanned.")
         return
-    await a.edit("Revert request sent to Oraizon. This might take 10minutes or so.")
+    await a.edit("Revert request sent to Slyveon. This might take 10minutes or so.")
 
 
-@System.on(system_cmd(pattern=r"oraizon logs"))
+@System.on(system_cmd(pattern=r"Slyveon logs"))
 async def logs(event):
     await System.send_file(event.chat_id, "log.txt")
 

@@ -1,13 +1,13 @@
 on_string = """
-══════✭✭✭✭✭═══════
+══════❀❀❀❀❀═══════
 CONNECTED TO SLYVEON SYSTEM 
-══════✭✭✭✭✭═══════
-     「❂ USER INFO ❂」
+══════❀❀❀❀❀═══════
+     「✮ USER INFO ✮」
+᪥ Name -   {name}
+᪥ Rank  -  {Enforcer} 
+----------------------------------
+🌸Verified by Slyveon X System  ✓
 
-⦿ Name -   {name}
-⦿ Rank  -  {Enforcer} 
-
-❂Verified User ✓
 
 """
 

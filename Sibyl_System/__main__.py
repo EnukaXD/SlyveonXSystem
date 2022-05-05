@@ -43,7 +43,7 @@ for load in to_load:
 
 @System.on(system_cmd(pattern=r"Slyveon", allow_enforcer=True))
 async def status(event):
-    msg = await event.client.send_file(event.chat_id, file="https://telegra.ph/file/435e49794fdc9f5741caa.mp4", caption="Connecting to Slyveon Systems", reply_to=event)
+    msg = await event.client.send_file(event.chat_id, file="https://telegra.ph/file/b2ae8dc79bcf9c32f52e3.mp4", caption="Connecting to Slyveon Systems ", reply_to=event)
     time.sleep(1)
     await msg.edit("Initialising ■□□□□□")
     time.sleep(1)
@@ -57,7 +57,7 @@ async def status(event):
     time.sleep(1)
     await msg.edit("Initialising ■■■■■■")
     time.sleep(1)
-    await msg.edit("🌼🌼VERIFIED🌼🌼")
+    await msg.edit("❀❀𝘝𝘦𝘳𝘪𝘧𝘪𝘦𝘥 𝘚𝘶𝘤𝘤𝘦𝘴𝘴𝘧𝘶𝘭𝘭𝘺❀❀")
     time.sleep(2)
     sender = await event.get_sender()
     user_status = "Inspector" if sender.id in INSPECTORS else "Enforcer"
@@ -110,7 +110,7 @@ async def main():
             msg += f"\n**{plugin}**\n\n`{FAILED_TO_LOAD[plugin]}`"
         await System.send_message(Sibyl_logs, msg)
     else:
-        await System.send_message(Sibyl_logs, "Slyveon X System is up!")
+        await System.send_message(Sibyl_logs, "Slyveon X System is up and database loaded !")
     await System.run_until_disconnected()
 
 

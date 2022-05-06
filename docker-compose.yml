@@ -1,0 +1,15 @@
+version: version
+services:
+  worker:
+    build: .
+    environment:
+      API_ID: $API_ID
+      API_HASH: $API_HASH
+      STRING_SESSION: $STRING_SESSION
+      Sibyl_logs: $Sibyl_logs
+      Sibyl_approved_logs: $Sibyl_approved_logs
+      GBAN_MSG_LOGS: $GBAN_MSG_LOGS
+      BOT_TOKEN: $BOT_TOKEN
+      ENFORCERS: $ENFORCERS
+      INSPECTORS: $INSPECTORS
+      MONGO_DB_URL: $MONGO_DB_URL
